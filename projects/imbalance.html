@@ -140,30 +140,30 @@
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
   <head>
     <link rel="icon" type="image/png" href="resources/ucsd_logo.png">
-    <title>Contrast and Mix: Temporal Contrastive Video Domain Adaptation with Background Mixing</title>
-    <meta property='og:title' content='Contrast and Mix: Temporal Contrastive Video Domain Adaptation with Background Mixing' />
-    <meta property="og:description" content="Aadarsh Sahoo, Rutav Shah, Rameswar Panda, Kate Saenko, Abir Das. Contrast and Mix: Temporal Contrastive Video Domain Adaptation with Background Mixing." />
-    <meta property='og:url' content='https://aadsah.github.io/projects/comix.html' />
+    <title>Mitigating Dataset Imbalance via Joint Generation and Classification</title>
+    <meta property='og:title' content='Mitigating Dataset Imbalance via Joint Generation and Classification' />
+    <meta property="og:description" content="Aadarsh Sahoo, Rutav Shah, Rameswar Panda, Kate Saenko, Abir Das. Mitigating Dataset Imbalance via Joint Generation and Classification." />
+    <meta property='og:url' content='https://cvir.github.io/projects/imbalance.html' />
   </head>
   <body>
         <br>
-        <center><span style="font-size:40px;font-weight:bold;color:#182B49">Contrast and Mix: Temporal Contrastive <br/>Video Domain Adaptation with Background Mixing</span></center>
+        <center><span style="font-size:40px;font-weight:bold;color:#182B49">Mitigating Dataset Imbalance via <br/>Joint Generation and Classification</span></center>
 
         <table align=center width=900px>
           <tr>
             <td align=center width=180px>
             <center><span style="font-size:20px"><a href="https://aadsah.github.io/" target="_blank">Aadarsh Sahoo</a><sup>1</sup></span></center></td>
             <td align=center width=180px>
-              <center><span style="font-size:20px"><a href="https://www.linkedin.com/in/rutav-shah-01a2941a7/" target="_blank">Rutav Shah</a><sup>1</sup></span></center></td>
+              <center><span style="font-size:20px"><a href="https://griffintaur.github.io/" target="_blank">Ankit Singh</a><sup>2</sup></span></center></td>
             <td align=center width=180px>
-                <center><span style="font-size:20px"><a href="https://rpand002.github.io/" target="_blank">Rameswar Panda</a><sup>2</sup></span></center></td>
+                <center><span style="font-size:20px"><a href="https://rpand002.github.io/" target="_blank">Rameswar Panda</a><sup>3</sup></span></center></td>
             <tr/>
          </table>
 
          <table align=center width=600px>
             <tr>
               <td align=center width=150px>
-                <center><span style="font-size:20px"><a href="http://ai.bu.edu/ksaenko.html" target="_blank">Kate Saenko</a><sup>2,3</sup></span></center></td>
+                <center><span style="font-size:20px"><a href="https://www.rogerioferis.org/" target="_blank">Rogerio Feris</a><sup>3</sup></span></center></td>
               <td align=center width=150px>
                 <center><span style="font-size:20px"><a href="https://cse.iitkgp.ac.in/~adas/" target="_blank">Abir Das</a><sup>1</sup></span></center></td>
         <tr/>
@@ -173,32 +173,32 @@
         <table align=center width=800px>
           <tr>
             <td align=center width=150px><center><sup>1 </sup><span style="font-size:18px">IIT Kharagpur</span></center></td>
-            <td align=center width=150px><center><sup>2 </sup><span style="font-size:18px">MIT-IBM Watson AI Lab</span></center></td>
-            <td align=center width=150px><center><sup>3 </sup><span style="font-size:18px">Boston University</span></center></td>
+            <td align=center width=150px><center><sup>2 </sup><span style="font-size:18px">IIT Madras</span></center></td>
+            <td align=center width=150px><center><sup>3 </sup><span style="font-size:18px">MIT-IBM Watson AI Lab</span></center></td>
           <tr/>
         </table> 
         <table align=center width=400px>
           <tr>
             <td align=center width=150px>
-            <center><span style="font-size:24px"><a href="https://neurips.cc/" target="_blank">NeurIPS 2021</a></span></center></td>
+            <center><span style="font-size:24px"><a href="https://sites.google.com/view/ipcv2020/home" target="_blank">IPCV Workshop at ECCV 2020</a></span></center></td>
           <tr/>
         </table>
         <table align=center width=200px>
             <tr><td width=200px>
-              <center><a href="images/comix_neurips2021_framework.jpg"><img src = "images/comix_neurips2021_framework.jpg" width="900" height="300"></img></a><br></center>
+              <center><a href="images/imbalance_eccvw2020_framework.png"><img src = "images/imbalance_eccvw2020_framework.png" width="900" height="400"></img></a><br></center>
             </td></tr>
         </table>
 
         <center id="abstract"><h1>Abstract</h1></center>
-        Unsupervised domain adaptation which aims to adapt models trained on a labeled source domain to a completely unlabeled target domain has attracted much attention in recent years. While many domain adaptation techniques have been proposed for images, the problem of unsupervised domain adaptation in videos remains largely underexplored. In this paper, we introduce Contrast and Mix (CoMix), a new contrastive learning framework that aims to learn discriminative invariant feature representations for unsupervised video domain adaptation. First, unlike existing methods that rely on adversarial learning for feature alignment, we utilize temporal contrastive learning to bridge the domain gap by maximizing the similarity between encoded representations of an unlabeled video at two different speeds as well as minimizing the similarity between different videos played at different speeds. Second, we propose a novel extension to the temporal contrastive loss by using background mixing that allows additional positives per anchor, thus adapting contrastive learning to leverage action semantics shared across both domains. Moreover, we also integrate a supervised contrastive learning objective using target pseudo-labels to enhance discriminability of the latent space for video domain adaptation. Extensive experiments on several benchmark datasets demonstrate the superiority of our proposed approach over state-of-the-art methods.        <br>
+        Supervised deep learning methods are enjoying enormous success in many practical applications of computer vision and have the potential to revolutionize robotics. However, the marked performance degradation to biases and imbalanced data questions the reliability of these methods. In this work we address these questions from the perspective of dataset imbalance resulting out of severe under-representation of annotated training data for certain classes and its effect on both deep classification and generation methods. We introduce a joint dataset repairment strategy by combining a neural network classifier with Generative Adversarial Networks (GAN) that makes up for the deficit of training examples from the under-representated class by producing additional training examples. We show that the combined training helps to improve the robustness of both the classifier and the GAN against severe class imbalance. We show the effectiveness of our proposed approach on three very different datasets with different degrees of imbalance in them.<br>
         <hr>
 
         <center id="results0"><h1>Experimental Results Overview</h1></center>
         <table align=center width=500px>
             <tr><td width=500px>
-              <center><a href="images/comix_neurips2021_ucf_hmdb.png"><img src = "images/comix_neurips2021_ucf_hmdb.png" width="500" height="270"></img></a><br></center>
+              <center><a href="images/imbalance_eccvw2020_table1.png"><img src = "images/imbalance_eccvw2020_table1.png" width="750" height="440"></img></a><br></center>
             </td></tr>
-            <caption width=500px align="center"> Results on <strong>UCF-HMDB</strong> Dataset. </caption>
+            <!-- <caption width=500px align="center"> Results on <strong>UCF-HMDB</strong> Dataset. </caption> -->
           </table>
         <br>
         <!-- <hr> -->
@@ -206,9 +206,18 @@
         <!-- <center id="results0"><h1>Experimental Results Overview</h1></center> -->
         <table align=center width=500px>
             <tr><td width=500px>
-              <center><a href="images/comix_neurips2021_epic_jester.png"><img src = "images/comix_neurips2021_epic_jester.png" width="700" height="160"></img></a><br></center>
+              <center><a href="images/imbalance_eccvw2020_table3.png"><img src = "images/imbalance_eccvw2020_table3.png" width="750" height="250"></img></a><br></center>
             </td></tr>
-            <caption width=500px> Results on <strong>Jester</strong> and <strong>Epic-Kitchens</strong> Datasets. </caption>
+            <!-- <caption width=500px> Results on <strong>Jester</strong> and <strong>Epic-Kitchens</strong> Datasets. </caption> -->
+          </table>          
+        <br>
+        <!-- <hr> -->
+
+        <table align=center width=500px>
+            <tr><td width=500px>
+              <center><a href="images/imbalance_eccvw2020_figure4.png"><img src = "images/imbalance_eccvw2020_figure4.png" width="750" height="420"></img></a><br></center>
+            </td></tr>
+            <!-- <caption width=500px> Results on <strong>Jester</strong> and <strong>Epic-Kitchens</strong> Datasets. </caption> -->
           </table>          
         <br>
         <hr>
@@ -221,19 +230,19 @@
             <tr></tr>
           <tr>
             <td >
-        <a href="https://aadsah.github.io/data/CoMix_NeurIPS_2021.pdf"><img class="paperpreview" src="images/comix_neurips2021_framework.jpg" width="250px"/></a>
+        <a href="https://aadsah.github.io/data/Imbalance_ECCVW_2020.pdf"><img class="paperpreview" src="images/imbalance_eccvw2020_framework.png" width="250px"/></a>
           </td>
           <td></td>
           <td width=700px > <span style="font-size:20px">
-            Aadarsh Sahoo, Rutav Shah, Rameswar Panda, Kate Saenko, Abir Das<br/>
-              <a href="https://aadsah.github.io/data/CoMix_NeurIPS_2021.pdf">
-                  Contrast and Mix: Temporal Contrastive Video Domain Adaptation with Background Mixing</a> <br/> <i>Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS)</i>, 2021 <br/>
-            [<a href="https://aadsah.github.io/data/CoMix_NeurIPS_2021.pdf">PDF</a>]
-            [<a href="https://aadsah.github.io/projects/comix.html">Supp</a>]
+            Aadarsh Sahoo, Ankit Singh, Rameswar Panda, Rogerio Feris, Abir Das<br/>
+              <a href="https://aadsah.github.io/data/Imbalance_ECCVW_2020.pdf">
+                  Mitigating Dataset Imbalance via Joint Generation and Classification</a> <br/> <i>ECCV2020 Workshop on Imbalance Problems in Computer Vision (ECCV-W)</i>, 2020 <br/>
+            [<a href="https://aadsah.github.io/data/Imbalance_ECCVW_2020.pdf">PDF</a>]
+            [<a href="https://cvir.github.io/projects/imbalance.html">Supp</a>]
 <!--[<a href="">Video Presentation</a>]-->
-            [<a href="https://aadsah.github.io/projects/comix.html">Poster</a>]
-              [<a href="https://aadsah.github.io/projects/comix.html">Slides</a>]
-              [<a href="https://aadsah.github.io/projects/comix.html">Code</a>]
+            [<a href="https://cvir.github.io/projects/imbalance.html">Poster</a>]
+              [<a href="https://cvir.github.io/projects/imbalance.html">Slides</a>]
+              [<a href="https://cvir.github.io/projects/imbalance.html">Code</a>]
 
 
 </span>
