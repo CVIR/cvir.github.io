@@ -22,9 +22,9 @@
               </p>
               <p>This is the laboratory webpage of Computer Vision and Intelligence Research Group at Department of Computer Science and Engineering, IIT Kharagpur, India, led by Prof. Abir Das.
               </p>
-              <p>
+              <!-- <p>
                 <font color="red">The site is under construction and will be updated soon.</font>
-              </p>
+              </p> -->
               <p style="text-align:center">
 
               </p>
@@ -39,7 +39,9 @@
             <tr> <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                  <li> [Sept'21] Paper on Domain Adaptation in Action Recognition accepted at <a href="https://neurips.cc/">NeurIPS 2021</a>.<br>
+                <li> [Oct'22] Paper on Partial Domain Adaptation accepted at <a href="https://wacv2023.thecvf.com/">WACV 2023</a>.<br>
+                <li> [Sept'21] Paper on Domain Adaptation in Action Recognition accepted at <a href="https://neurips.cc/">NeurIPS 2021</a>.<br>
+                  <li> [Feb'21] Paper on Semi-Supervised Action Recognition accepted at <a href="https://cvpr2021.thecvf.com/">CVPR 2021</a>.<br>
               </ul>
             </td> </tr>
         </tbody></table>
@@ -63,22 +65,46 @@
         </tbody></table>
 
         <!-- Papers list -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+           <td style="padding:20px;width:25%;vertical-align:middle">
+             <img src="images/arXiv_2020_SLM.png" width="160" height="100">
+           </td>
+           <td width="75%" valign="middle">
+             <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Sahoo_Select_Label_and_Mix_Learning_Discriminative_Invariant_Feature_Representations_for_WACV_2023_paper.pdf">
+               <papertitle>Select, Label, and Mix: Learning Discriminative Invariant Feature Representations for Partial Domain Adaptation</papertitle>
+             </a>
+             <br>
+               Aadarsh Sahoo, Rameswar Panda, Rogerio Feris, Kate Saenko, Abir Das<br>
+             <em>NeurIPS DistShift Workshop (<strong>NeurIPS-W</strong>)</em>, 2021.<br>
+             <em>Winter Conference on Applications of Computer Vision (<strong>WACV</strong>)</em>, 2023.<br>
+             <a href="https://cvir.github.io/projects/slm.html">project page</a> /
+             <a href="https://video.vast.uccs.edu/WACV23/1177-wacv-post.pdf">poster</a> /
+             <a href="https://video.vast.uccs.edu/WACV23/1177_wacv.mp4">video presentation</a> /
+             <a href="https://docs.google.com/presentation/d/1JlORqqL4LlOOqaAYqriaJ5g5UAIumURyrGF0BAj0gQY/edit?usp=sharing">slides</a>
+             <a href="https://github.com/CVIR/SLM">code</a>
+             <p> We develop a novel 'Select, Label, and Mix' (SLM) framework that aims to learn discriminative invariant feature representations for partial domain adaptation.</p>
+           </td>
+         </tr> </tbody></table>
+
+         
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
            <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/NeurIPS_2021_CoMix.png" width="160" height="100">
             </td>
             <td width="75%" valign="middle">
-              <a href="https://cvir.github.io/">
+              <a href="https://proceedings.neurips.cc/paper/2021/file/c47e93742387750baba2e238558fa12d-Paper.pdf">
                 <papertitle>Contrast and Mix: Temporal Contrastive Video Domain Adaptation with Background Mixing</papertitle>
               </a>
               <br>
                 Aadarsh Sahoo, Rutav Shah, Rameswar Panda, Kate Saenko, Abir Das<br>
               <em>35th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2021.<br>
               <a href="https://cvir.github.io/projects/comix.html">project page</a> /
-              <a href="https://cvir.github.io/">arXiv</a> /
-              <!-- <a href="https://youtu.be/EpH175PY1A0">video</a> / -->
-              <a href="https://cvir.github.io/">code</a>
+              <a href="https://cvir.github.io/projects/images/comix_neurips2021_poster.png">poster</a> /
+              <a href="https://slideslive.com/38967894/contrast-and-mix-temporal-contrastive-video-domain-adaptation-with-background-mixing">video presentation</a> /
+              <a href="https://docs.google.com/presentation/d/1UBvqIRdl7DkmZN7_3lumpMg5kVyjcOl6B507pw4Ul98/edit#slide=id.gf354b2a2b3_0_351">slides</a> /
+              <a href="https://github.com/CVIR/CoMix">code</a>
               <p> We introduce a novel temporal contrastive learning approach for unsupervised video domain adaptation, which is achieved by jointly leveraging video speed, background mixing, and target pseudo-labels.</p>
             </td>
           </tr> </tbody></table>
@@ -100,6 +126,28 @@
                <!-- <a href="https://youtu.be/EpH175PY1A0">video</a> / -->
                <a href="https://cvir.github.io/">code</a>
                <p> We reformulate the process of generating saliency maps using perturbation based methods for black box models as a Markov Decsion Process and use RL to optimally search for the best saliency map, thereby reducing the inference time without hurting the performance.</p>
+             </td>
+           </tr> </tbody></table>
+
+
+           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <img src="images/TCL_Framework.png" width="160" height="100">
+             </td>
+             <td width="75%" valign="middle">
+               <a href="https://arxiv.org/pdf/2102.02751.pdf">
+                 <papertitle>Semi-Supervised Action Recognition with Temporal Contrastive Learning</papertitle>
+               </a>
+               <br>
+                  Ankit Singh, Omprakash Chakraborty, Ashutosh Varshney, Rameswar Panda, Rogerio Feris, Kate Saenko, Abir Das<br>
+               <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2021.<br>
+               <a href="https://cvir.github.io/TCL/">project page</a> /
+               <a href="https://cse.iitkgp.ac.in/~adas/papers/TCL_poster.pdf">poster</a> /
+               <a href="https://youtu.be/_qIYu3EU2kY">video presentation</a> /
+               <!-- <a href="https://docs.google.com/presentation/d/1UBvqIRdl7DkmZN7_3lumpMg5kVyjcOl6B507pw4Ul98/edit#slide=id.gf354b2a2b3_0_351">slides</a> / -->
+               <a href="https://github.com/CVIR/TCL">code</a>
+               <p> We address semi-supervised video action recognition by learning a two-pathway temporal contrastive model where the similarity between representations of the same video at two different speeds are maximized while the similarity between different videos played at different speeds are minimized.</p>
              </td>
            </tr> </tbody></table>
 
