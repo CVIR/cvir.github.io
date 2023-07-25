@@ -1,0 +1,282 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  .link2 {
+    text-decoration: none;
+    display: inline;
+    margin-right: 5px;
+  }
+
+  .fakelink {
+    text-decoration: none;
+    /* cursor: pointer; */
+  }
+
+  element.style {
+    overflow: hidden;
+    display: block;
+  }
+  .pre-white-space {
+    white-space: pre;
+  }
+  .bibref {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: none;
+    font-size: 14px;
+    font-family: monospace;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+  <head>
+    <link rel="icon" type="image/png" href="resources/ucsd_logo.png">
+    <title>Exemplar-Free Continual Transformer with Convolutions</title>
+    <meta property='og:title' content='Exemplar-Free Continual Transformer with Convolutions' />
+    <meta property="og:description" content="Anurag Roy, Vinay K. Verma, Sravan Voonna, Kripabandhu Ghosh, Saptarshi Ghosh, Abir Das. Exemplar-Free Continual Transformer with Convolutions." />
+    <meta property='og:url' content='https://cvir.github.io/projects/contracon.html' />
+  </head>
+  <body>
+        <br>
+        <center><span style="font-size:40px;font-weight:bold;color:#182B49">Exemplar-Free Continual Transformer with Convolutions</span></center>
+
+        <table align=center width=900px>
+          <tr>
+            <td align=center width=180px>
+              <center><span style="font-size:20px"><a href="https://ranarag.github.io/" target="_blank">Anurag Roy</a><sup>1</sup></span></center></td>
+            <td align=center width=180px>
+              <center><span style="font-size:20px"><a href="https://sites.google.com/view/vinaycse/home" target="_blank">Vinay K. Verma</a><sup>2</sup></span></center></td>
+            <td align=center width=180px>
+              <center><span style="font-size:20px"><a href="#" target="_blank">Sravan Voonna</a><sup>1</sup></span></center></td>
+            <td align=center width=180px>
+                <center><span style="font-size:20px"><a href="https://sites.google.com/view/kripabandhughosh-homepage/home" target="_blank">Kripabandhu Ghosh</a><sup>3</sup></span></center></td>
+            <td align=center width=180px>
+                <center><span style="font-size:20px"><a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Saptarshi Ghosh</a><sup>1</sup></span></center></td>
+            <td align=center width=180px>
+              <center><span style="font-size:20px"><a href="https://cse.iitkgp.ac.in/~adas/" target="_blank">Abir Das</a><sup>1</sup></span></center></td>
+            <tr/>
+         </table>
+        <!-- <center><span style="font-size:15px;color:#000000">&#8224: Equal Contribution</span></center> -->
+
+        <table align=center width=800px>
+          <tr>
+            <td align=center width=150px><center><sup>1 </sup><span style="font-size:18px">IIT Kharagpur</span></center></td>
+            <td align=center width=150px><center><sup>2 </sup><span style="font-size:18px">IML Amazon India</span></center></td>
+            <td align=center width=150px><center><sup>3 </sup><span style="font-size:18px">IISER Kolkata</span></center></td>
+          <tr/>
+        </table> 
+        <table align=center width=400px>
+          <tr>
+            <td align=center width=150px>
+              <center><span style="font-size:24px"><a href="https://iccv2023.thecvf.com" target="_blank">ICCV 2023</a></span></center></td>
+              <!-- <center><span style="font-size:24px"><a href="https://sites.google.com/view/distshift2021/home" target="_blank">NeurIPS DistShift Workshop 2021</a></span></center></td> -->
+          <tr/>
+        </table>
+        <table align=center width=200px>
+            <tr><td width=200px>
+              <center><a href="images/ICCV2023_contracon.png"><img src = "images/ICCV2023_contracon.png" width="900" height="450"></img></a><br></center>
+            </td></tr>
+        </table>
+
+        <center id="abstract"><h1>Abstract</h1></center>
+        Continual Learning (CL) involves training a machine learning model in a sequential manner to learn new information while retaining previously learned 
+        tasks without the presence of previous training data. Although there has been significant interest in CL, 
+        most recent CL approaches in computer vision have focused on convolutional architectures only. 
+        However, with the recent success of vision transformers, there is a need to explore their potential for CL. 
+        Although there have been some recent CL approaches for vision transformers, they either store training instances of previous tasks or require a task identifier during test time, which can be limiting. 
+        This paper proposes a new exemplar-free approach for class/task incremental learning called <b>ConTraCon</b>, which does not require task-id to be explicitly present during inference and avoids the need for storing previous training instances. 
+        The proposed approach leverages the transformer architecture and involves re-weighting the key, query, and value weights of the multi-head self-attention layers of a transformer trained on a similar task. 
+        The re-weighting is done using convolution, which enables the approach to maintain low parameter requirements per task. 
+        Additionally, an image augmentation-based entropic task identification approach is used to predict tasks without requiring task-ids during inference. 
+        Experiments on four benchmark datasets demonstrate that the proposed approach outperforms several competitive approaches while requiring fewer parameters.<br>
+        <hr>
+
+        <!-- <center id="results0"><h1>Experimental Results Overview</h1></center> -->
+        <!-- <table align=center width=500px>
+            <tr><td width=500px>
+              <center><a href="images/slm_office31.png"><img src = "images/slm_office31.png" width="500" height="310"></img></a><br></center>
+            </td></tr>
+            <caption width=500px align="center"> Results on <strong>Office-31</strong> Dataset. </caption>
+          </table>
+        <br> -->
+        <!-- <hr> -->
+
+        <!-- <table align=center width=500px>
+            <tr><td width=500px>
+              <center><a href="images/slm_officehome.png"><img src = "images/slm_officehome.png" width="680" height="310"></img></a><br></center>
+            </td></tr>
+            <caption width=500px align="center"> Results on <strong>Office-Home</strong> Dataset. </caption>
+          </table>
+        <br> -->
+
+        <!-- <table align=center width=500px>
+            <tr><td width=500px>
+              <center><a href="images/slm_imagenet_visda.png"><img src = "images/slm_imagenet_visda.png" width="480" height="310"></img></a><br></center>
+            </td></tr>
+            <caption width=500px align="center"> Results on <strong>ImageNet-Caltech</strong> and <strong>VisDA-2017</strong> Datasets. </caption>
+          </table>
+        <br> -->
+
+
+
+        <!-- <center id="results0"><h1>Experimental Results Overview</h1></center> -->
+        <!-- <table align=center width=500px>
+            <tr><td width=500px>
+              <center><a href="images/slm_vary.png"><img src = "images/slm_vary.png" width="600" height="350"></img></a><br></center>
+            </td></tr>
+            <caption width=500px> Results by varying the number of outlier classes. (Office-31: A->W) </caption>
+          </table>          
+        <br>
+        <hr> -->
+
+        
+        <center id="sourceCode"><h1>Paper & Code Coming Soon!</h1></center>
+
+
+        <!-- <table align=center width=900px>
+            <tr></tr>
+          <tr>
+            <td >
+        <a href="https://openreview.net/pdf?id=yyLvxYBJV1B"><img class="paperpreview" src="images/anyda_framework.png" width="250px"/></a>
+          </td>
+          <td></td>
+          <td width=700px > <span style="font-size:20px">
+            Omprakash Charkraborty, Aadarsh Sahoo, Rameswar Panda, Abir Das<br/>
+              <a href="https://openreview.net/pdf?id=yyLvxYBJV1B">
+                Exemplar-Free Continual Transformer with Convolutions</a> <br/> <i>ICCV</i>, 2023<br/>
+            [<a href="https://openreview.net/pdf?id=yyLvxYBJV1B">PDF</a>]
+            [<a href="#">CODE Coming Soon!</a>] -->
+            <!-- [<a href="https://openaccess.thecvf.com/content/WACV2023/supplemental/Sahoo_Select_Label_and_WACV_2023_supplemental.pdf">Supp</a>] -->
+<!--[<a href="">Video Presentation</a>]-->
+            <!-- [<a href="https://video.vast.uccs.edu/WACV23/1177-wacv-post.pdf">Poster</a>] -->
+            <!-- [<a href="https://video.vast.uccs.edu/WACV23/1177_wacv.mp4">Presentation</a>] -->
+              <!-- [<a href="https://docs.google.com/presentation/d/1JlORqqL4LlOOqaAYqriaJ5g5UAIumURyrGF0BAj0gQY/edit?usp=sharing">Slides</a>] -->
+              <!-- [<a href="https://github.com/CVIR/SLM">Code</a>] -->
+
+
+</span>
+        </td>
+        </tr>
+
+      </table>
+
+      <br>
+      <hr>
+
+      <br/>
+
+    <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
